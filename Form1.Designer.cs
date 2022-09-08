@@ -40,6 +40,9 @@
             this.mostrarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.countPrimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getMaxNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.getMinNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,7 +108,10 @@
             // 
             this.menuVectorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarToolStripMenuItem,
-            this.mostrarDatosToolStripMenuItem});
+            this.mostrarDatosToolStripMenuItem,
+            this.countPrimeToolStripMenuItem,
+            this.getMaxNumberToolStripMenuItem,
+            this.getMinNumberToolStripMenuItem});
             this.menuVectorToolStripMenuItem.Name = "menuVectorToolStripMenuItem";
             this.menuVectorToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.menuVectorToolStripMenuItem.Text = "Menu vector";
@@ -113,14 +119,14 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cargarToolStripMenuItem.Text = "cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // mostrarDatosToolStripMenuItem
             // 
             this.mostrarDatosToolStripMenuItem.Name = "mostrarDatosToolStripMenuItem";
-            this.mostrarDatosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mostrarDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarDatosToolStripMenuItem.Text = "mostrar datos";
             this.mostrarDatosToolStripMenuItem.Click += new System.EventHandler(this.mostrarDatosToolStripMenuItem_Click);
             // 
@@ -139,6 +145,27 @@
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "resultado";
+            // 
+            // countPrimeToolStripMenuItem
+            // 
+            this.countPrimeToolStripMenuItem.Name = "countPrimeToolStripMenuItem";
+            this.countPrimeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.countPrimeToolStripMenuItem.Text = "Count Prime";
+            this.countPrimeToolStripMenuItem.Click += new System.EventHandler(this.countPrimeToolStripMenuItem_Click);
+            // 
+            // getMaxNumberToolStripMenuItem
+            // 
+            this.getMaxNumberToolStripMenuItem.Name = "getMaxNumberToolStripMenuItem";
+            this.getMaxNumberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.getMaxNumberToolStripMenuItem.Text = "Get Max Number";
+            this.getMaxNumberToolStripMenuItem.Click += new System.EventHandler(this.getMaxNumberToolStripMenuItem_Click);
+            // 
+            // getMinNumberToolStripMenuItem
+            // 
+            this.getMinNumberToolStripMenuItem.Name = "getMinNumberToolStripMenuItem";
+            this.getMinNumberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.getMinNumberToolStripMenuItem.Text = "Get Min Number";
+            this.getMinNumberToolStripMenuItem.Click += new System.EventHandler(this.getMinNumberToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -179,6 +206,9 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarDatosToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem countPrimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getMaxNumberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem getMinNumberToolStripMenuItem;
     }
 }
 
