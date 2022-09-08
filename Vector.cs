@@ -88,5 +88,21 @@ namespace Vectores
             }
             return major;
         }
+
+        public void SelectPrimes(ref Vector objResult)
+        {
+            int index;
+            IntegerNumber objNumber = new IntegerNumber();
+            objResult.number = 0;
+            for (index = 1; index < number; index++)
+            {
+                objNumber.setNumber(numbers[index]);
+                if (objNumber.isPrime())
+                {
+                    objResult.number++;
+                    objResult.numbers[objResult.number] = numbers[index];
+                }
+            }
+        }
     }
 }
