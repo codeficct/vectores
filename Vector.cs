@@ -8,31 +8,31 @@ namespace Vectores
 {
     class Vector
     {
-        // Property
         const int MAX_LENGTH = 50;
         private int[] numbers;
         private int number;
-        // constructor
+
         public Vector()
         {
             number = 0;
             numbers = new int[MAX_LENGTH];
         }
-        // Methods
-        public void setNumber(int n1, int a, int b)
+
+        public void setNumber(int n1, int max, int min)
         {
-            int index = 0;
+            int index;
             Random random = new Random();
             number = n1;
-            for (index = 1; index < n1; index++)
+            for (index = 1; index <= n1; index++)
             {
-                numbers[index] = random.Next(a, b);
+                numbers[index] = random.Next(min, max);
             }
         }
+
         public string getNumber()
         {
             string result = "";
-            int index = 0;
+            int index;
             for (index = 1; index <= number; index++)
             {
                 result = result + numbers[index] + "  -  ";
@@ -104,5 +104,6 @@ namespace Vectores
                 }
             }
         }
+
     }
 }

@@ -83,19 +83,13 @@ namespace Vectores
             return reverseInteger() == number;
         }
 
-        public bool checkIfIsFibonacci()
+        public bool checkIfIsFibonacci(int a = 0, int b = 1)
         {
-            int a = 0, b = 0, c, index;
-            bool result = false;
-
-            for (index = 0; index <= number; index++)
-            {
-                c = a + b;
-                if (c == number) result = true;
-                a = b; b = c;
-            }
-
-            return result;
+            if (number == 0 || number == 1) return true;
+            int c = a + b;
+            if (c == number) return true;
+            else if (c > number) return false;
+            return checkIfIsFibonacci(b, c);
         }
 
         public double getFactorial()
@@ -127,7 +121,7 @@ namespace Vectores
 
             Array.Sort(numArray);
 
-            for (int i = 0; i < numArray.Length; i++)
+            for (int i = 1; i < numArray.Length; i++)
             {
                 numOrder = numOrder * 10 + numArray[index];
             }

@@ -25,11 +25,11 @@ namespace Vectores
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int n1, a, b;
+            int n1, max, min;
             n1 = int.Parse(textBox1.Text);
-            a = int.Parse(textBox2.Text);
-            b = int.Parse(textBox3.Text);
-            objV1.setNumber(n1, a, b);
+            max = int.Parse(textBox2.Text);
+            min = int.Parse(textBox3.Text);
+            objV1.setNumber(n1, max, min);
         }
 
         private void mostrarDatosToolStripMenuItem_Click(object sender, EventArgs e)
