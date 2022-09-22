@@ -105,5 +105,10 @@ namespace Vectores
             }
         }
 
+        public string OrderMethod()
+        {
+            Array.Sort(numbers);
+            return this.getNumber();
+        }
     }
 }
