@@ -41,11 +41,12 @@
             this.countPrimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getMaxNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getMinNumberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ordenarVectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +156,28 @@
             this.getMinNumberToolStripMenuItem.Text = "Get Min Number";
             this.getMinNumberToolStripMenuItem.Click += new System.EventHandler(this.getMinNumberToolStripMenuItem_Click);
             // 
+            // menu2ToolStripMenuItem
+            // 
+            this.menu2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarToolStripMenuItem1,
+            this.descargarToolStripMenuItem,
+            this.ordenarVectorToolStripMenuItem});
+            this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
+            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.menu2ToolStripMenuItem.Text = "Menu 2";
+            // 
+            // cargarToolStripMenuItem1
+            // 
+            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cargarToolStripMenuItem1.Text = "cargar";
+            // 
+            // descargarToolStripMenuItem
+            // 
+            this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.descargarToolStripMenuItem.Text = "Descargar";
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(197, 237);
@@ -171,26 +194,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "resultado";
             // 
-            // menu2ToolStripMenuItem
+            // ordenarVectorToolStripMenuItem
             // 
-            this.menu2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cargarToolStripMenuItem1,
-            this.descargarToolStripMenuItem});
-            this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.menu2ToolStripMenuItem.Text = "Menu 2";
-            // 
-            // cargarToolStripMenuItem1
-            // 
-            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
-            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cargarToolStripMenuItem1.Text = "cargar";
-            // 
-            // descargarToolStripMenuItem
-            // 
-            this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.descargarToolStripMenuItem.Text = "Descargar";
+            this.ordenarVectorToolStripMenuItem.Name = "ordenarVectorToolStripMenuItem";
+            this.ordenarVectorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordenarVectorToolStripMenuItem.Text = "Ordenar Vector";
+            this.ordenarVectorToolStripMenuItem.Click += new System.EventHandler(this.ordenarVectorToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -237,6 +246,7 @@
         private System.Windows.Forms.ToolStripMenuItem menu2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarVectorToolStripMenuItem;
     }
 }
 
