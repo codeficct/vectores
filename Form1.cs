@@ -51,5 +51,10 @@ namespace Vectores
         {
             textBox4.Text = objV1.getMaxMin(false).ToString();
         }
+
+        private void ordenarVectorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox4.Text = objV1.OrderMethod();
+        }
     }
 }
