@@ -12,7 +12,7 @@ namespace Vectores
 {
     public partial class Form1 : Form
     {
-        Vector objV1;
+        Vector objV1, objV2;
         public Form1()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace Vectores
         private void Form1_Load(object sender, EventArgs e)
         {
             objV1 = new Vector();
+            objV2 = new Vector();
         }
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,6 +51,12 @@ namespace Vectores
         private void getMinNumberToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox4.Text = objV1.getMaxMin(false).ToString();
+        }
+
+        private void segmentacionDeEleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            objV1.SegmentarElementos(ref objV2);
+            textBox4.Text = objV2.getNumber();
         }
     }
 }

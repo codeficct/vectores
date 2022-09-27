@@ -8,22 +8,22 @@ namespace Vectores
 {
     class Vector
     {
-        const int MAX_LENGTH = 50;
         private int[] numbers;
         private int number;
 
         public Vector()
         {
             number = 0;
-            numbers = new int[MAX_LENGTH];
+            numbers = new int[number];
         }
 
         public void setNumber(int n1, int max, int min)
         {
             int index;
+            numbers = new int[n1];
             Random random = new Random();
             number = n1;
-            for (index = 1; index <= n1; index++)
+            for (index = 0; index < n1; index++)
             {
                 numbers[index] = random.Next(min, max);
             }
@@ -33,9 +33,10 @@ namespace Vectores
         {
             string result = "";
             int index;
-            for (index = 1; index <= number; index++)
+            for (index = 0; index < number; index++)
             {
-                result = result + numbers[index] + "  -  ";
+                if (index == number - 1) result = result + numbers[index];
+                else result = result + numbers[index] + "  -  ";
             }
             return result;
         }
@@ -105,5 +106,36 @@ namespace Vectores
             }
         }
 
+        // Segmentar en primos y no primos ordenados
+        // Recordando: Ordenamiento por intercambio.
+        public void SegmentarElementos(ref Vector objVectorResult)
+        {
+            IntegerNumber objInteger = new IntegerNumber();
+            int[] v = { 6, 7, 5, 8, 4, 6, 2 };
+            int[] prime = new int[number];
+            int[] noPrime = new int[number];
+            int index, a = 0, b = 0;
+            objVectorResult.number = number;
+            for (index = 0; index < number; index++)
+            {
+                objInteger.setNumber(numbers[index]);
+                if (objInteger.isPrime())
+                {
+                    Console.WriteLine("is Prime " + numbers[index]);
+                    prime[a] = numbers[index];
+                    a++;
+                }
+                else
+                {
+                    Console.WriteLine("is not Prime " + numbers[index]);
+                    noPrime[b] = numbers[index];
+                    b++;
+                }
+            }
+            var z = new int[prime.Length + noPrime.Length];
+            prime.CopyTo(z, 0);
+            noPrime.CopyTo(z, prime.Length);
+            objVectorResult.numbers = z;
+        }
     }
 }
