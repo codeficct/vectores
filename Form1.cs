@@ -53,10 +53,15 @@ namespace Vectores
             textBox4.Text = objV1.getMaxMin(false).ToString();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
         private void segmentacionDeEleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objV1.SegmentarElementos(ref objV2);
             textBox4.Text = objV2.getNumber();
+            Console.ReadLine();
         }
     }
 }
