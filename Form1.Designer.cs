@@ -44,59 +44,67 @@
             this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarVectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.ordenarVectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarElementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contarElementosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 76);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(200, 110);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(304, 76);
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(331, 110);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(100, 29);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(430, 76);
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(457, 110);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(100, 29);
             this.textBox3.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(209, 60);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(196, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
+            this.label1.Size = new System.Drawing.Size(124, 21);
             this.label1.TabIndex = 3;
-            this.label1.Text = "n1";
+            this.label1.Text = "Num. Elementos";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(349, 60);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(362, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.Size = new System.Drawing.Size(37, 21);
             this.label2.TabIndex = 4;
-            this.label2.Text = "a";
+            this.label2.Text = "Min";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(476, 60);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(497, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.Size = new System.Drawing.Size(39, 21);
             this.label3.TabIndex = 5;
-            this.label3.Text = "b";
+            this.label3.Text = "Max";
             // 
             // menuStrip1
             // 
@@ -124,35 +132,35 @@
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cargarToolStripMenuItem.Text = "cargar";
             this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // mostrarDatosToolStripMenuItem
             // 
             this.mostrarDatosToolStripMenuItem.Name = "mostrarDatosToolStripMenuItem";
-            this.mostrarDatosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.mostrarDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarDatosToolStripMenuItem.Text = "mostrar datos";
             this.mostrarDatosToolStripMenuItem.Click += new System.EventHandler(this.mostrarDatosToolStripMenuItem_Click);
             // 
             // countPrimeToolStripMenuItem
             // 
             this.countPrimeToolStripMenuItem.Name = "countPrimeToolStripMenuItem";
-            this.countPrimeToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.countPrimeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.countPrimeToolStripMenuItem.Text = "Count Prime";
             this.countPrimeToolStripMenuItem.Click += new System.EventHandler(this.countPrimeToolStripMenuItem_Click);
             // 
             // getMaxNumberToolStripMenuItem
             // 
             this.getMaxNumberToolStripMenuItem.Name = "getMaxNumberToolStripMenuItem";
-            this.getMaxNumberToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.getMaxNumberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.getMaxNumberToolStripMenuItem.Text = "Get Max Number";
             this.getMaxNumberToolStripMenuItem.Click += new System.EventHandler(this.getMaxNumberToolStripMenuItem_Click);
             // 
             // getMinNumberToolStripMenuItem
             // 
             this.getMinNumberToolStripMenuItem.Name = "getMinNumberToolStripMenuItem";
-            this.getMinNumberToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.getMinNumberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.getMinNumberToolStripMenuItem.Text = "Get Min Number";
             this.getMinNumberToolStripMenuItem.Click += new System.EventHandler(this.getMinNumberToolStripMenuItem_Click);
             // 
@@ -161,7 +169,9 @@
             this.menu2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarToolStripMenuItem1,
             this.descargarToolStripMenuItem,
-            this.ordenarVectorToolStripMenuItem});
+            this.ordenarVectorToolStripMenuItem,
+            this.cargarElementosToolStripMenuItem,
+            this.contarElementosToolStripMenuItem});
             this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
             this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.menu2ToolStripMenuItem.Text = "Menu 2";
@@ -171,28 +181,14 @@
             this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
             this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cargarToolStripMenuItem1.Text = "cargar";
+            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
             this.descargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(197, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(292, 20);
-            this.textBox4.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(325, 221);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "resultado";
+            this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
             // 
             // ordenarVectorToolStripMenuItem
             // 
@@ -200,6 +196,41 @@
             this.ordenarVectorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ordenarVectorToolStripMenuItem.Text = "Ordenar Vector";
             this.ordenarVectorToolStripMenuItem.Click += new System.EventHandler(this.ordenarVectorToolStripMenuItem_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(200, 271);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox4.Size = new System.Drawing.Size(357, 60);
+            this.textBox4.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(337, 247);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 21);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Resultado";
+            // 
+            // cargarElementosToolStripMenuItem
+            // 
+            this.cargarElementosToolStripMenuItem.Name = "cargarElementosToolStripMenuItem";
+            this.cargarElementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargarElementosToolStripMenuItem.Text = "cargar elementos";
+            this.cargarElementosToolStripMenuItem.Click += new System.EventHandler(this.cargarElementosToolStripMenuItem_Click);
+            // 
+            // contarElementosToolStripMenuItem
+            // 
+            this.contarElementosToolStripMenuItem.Name = "contarElementosToolStripMenuItem";
+            this.contarElementosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contarElementosToolStripMenuItem.Text = "Contar elementos";
+            this.contarElementosToolStripMenuItem.Click += new System.EventHandler(this.contarElementosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -247,6 +278,8 @@
         private System.Windows.Forms.ToolStripMenuItem cargarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenarVectorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarElementosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contarElementosToolStripMenuItem;
     }
 }
 

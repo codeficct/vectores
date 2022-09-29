@@ -11,11 +11,19 @@ namespace Vectores
         const int MAX_LENGTH = 50;
         private int[] numbers;
         private int number;
+        private int index;
 
         public Vector()
         {
             number = 0;
             numbers = new int[MAX_LENGTH];
+            index = 0;
+        }
+
+        public void Set(int value)
+        {
+            numbers[index] = value;
+            index++;
         }
 
         public void setNumber(int n1, int max, int min)
@@ -109,6 +117,76 @@ namespace Vectores
         {
             Array.Sort(numbers);
             return this.getNumber();
+        }
+
+        public int countRepeatsElements()
+        {
+            Array.Sort(numbers);
+            int index, count = 0, ele, indexEl = 0;
+            for (index = 0; index < number; index++)
+            {
+                ele = numbers[indexEl];
+
+                if (ele != numbers[index])
+                {
+                    indexEl = numbers[index];
+                    Console.WriteLine(indexEl);
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public int countNumElements()
+        {
+            Array.Sort(numbers);
+            int index = 0, count = 0, ele;
+            while (index < number)
+            {
+                ele = numbers[index];
+                while ((index < number) && (numbers[index] == ele))
+                {
+                    index++;
+                }
+                count++;
+            }
+            return count;
+        }
+
+        public void Purga(ref Vector objResult)
+        {
+            Array.Sort(numbers);
+            int index = 0, count = 0, ele;
+            while (index < number)
+            {
+                ele = numbers[index];
+                while ((index < number) && (numbers[index] == ele))
+                {
+                    index++;
+                }
+                count++;
+                objResult.numbers[count] = ele;
+            }
+            objResult.number = count;
+        }
+
+        public void Frecuence(ref Vector objResult, ref Vector objFrecuence)
+        {
+            Array.Sort(numbers);
+            int index = 0, count = 0, ele, f;
+            while (index < number)
+            {
+                ele = numbers[index]; f = 0;
+                while ((index < number) && (numbers[index] == ele))
+                {
+                    index++; f++;
+                }
+                count++;
+                objResult.numbers[count] = ele;
+                objFrecuence.numbers[count] = f;
+            }
+            objResult.number = count;
+            objFrecuence.number = count;
         }
     }
 }

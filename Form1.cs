@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using Microsoft.VisualBasic;
 
 namespace Vectores
 {
@@ -25,11 +20,11 @@ namespace Vectores
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int n1, max, min;
-            n1 = int.Parse(textBox1.Text);
-            max = int.Parse(textBox2.Text);
-            min = int.Parse(textBox3.Text);
-            objV1.setNumber(n1, max, min);
+            int value, max, min;
+            value = int.Parse(textBox1.Text);
+            min = int.Parse(textBox2.Text);
+            max = int.Parse(textBox3.Text);
+            objV1.setNumber(value, max, min);
         }
 
         private void mostrarDatosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,6 +50,35 @@ namespace Vectores
         private void ordenarVectorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox4.Text = objV1.OrderMethod();
+        }
+
+        private void cargarElementosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int n, index;
+            
+            n = int.Parse(Interaction.InputBox("Dimen:"));
+            for (index = 0; index < n; index++)
+                objV1.Set(1 );
+        }
+
+        private void contarElementosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // textBox4.Text = objV1.countRepeatsElements().ToString();
+            textBox4.Text = objV1.countNumElements().ToString();
+        }
+
+        private void cargarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int value, max, min;
+            value = int.Parse(textBox1.Text);
+            min = int.Parse(textBox2.Text);
+            max = int.Parse(textBox3.Text);
+            objV1.setNumber(value, max, min);
+        }
+
+        private void descargarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox4.Text = objV1.getNumber();
         }
     }
 }
